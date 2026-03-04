@@ -452,13 +452,14 @@ Tag main at the completion of each verified phase:
 Tags serve as safe restore points before starting the next phase.
 
 10.6 Automated Push Policy (Claude Code)
-After each phase is built and verified end-to-end, Claude Code must automatically:
-1. Merge dev → main
-2. Tag main with the appropriate phase tag
-3. Push main, dev, and tags to origin
+Dev branch — auto-commit and push after each passing test:
+- When a test passes, commit the relevant changes to dev and push dev to origin immediately.
+- Passing tests are a necessary condition, not a sufficient one — the operator reviews output quality before approving a phase.
 
-This happens only after the phase verification step passes — not before.
-Never push unverified or mid-phase code to main.
+Main branch — only on explicit operator approval:
+- Never merge dev → main automatically just because a test passed.
+- Only merge dev → main, tag, and push when the operator explicitly says they are satisfied with the phase output.
+- Never tag or push to main without that explicit sign-off.
 
 10.5 .gitignore (root)
 .env
