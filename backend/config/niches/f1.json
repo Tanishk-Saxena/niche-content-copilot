@@ -1,0 +1,83 @@
+{
+  "slug": "f1",
+  "name": "Formula 1",
+  "rss_sources": [
+    "https://www.autosport.com/rss/f1/news/",
+    "https://www.racefans.net/feed/",
+    "https://www.bbc.com/sport/formula1/rss.xml",
+    "https://www.reddit.com/r/formula1/hot/.rss",
+    "https://www.skysports.com/rss/12433",
+    "https://www.therace.com/feed/",
+    "https://racingnews365.com/feed"
+  ],
+  "x_sources": {
+    "enabled": false,
+    "note": "X API Basic ($100/month) required for official access.",
+    "future_accounts": ["@F1", "@SkySportsF1", "@autosport", "@RacingLines", "@WTF1official"],
+    "rssbridge_option": "RSSHub grey-area workaround — use at own risk"
+  },
+  "teams_2026": {
+    "McLaren": ["Lando Norris", "Oscar Piastri"],
+    "Ferrari": ["Charles Leclerc", "Lewis Hamilton"],
+    "Mercedes": ["George Russell", "Kimi Antonelli"],
+    "Red Bull Racing": ["Max Verstappen", "Isack Hadjar"],
+    "Williams": ["Carlos Sainz", "Alex Albon"],
+    "Aston Martin": ["Fernando Alonso", "Lance Stroll"],
+    "Racing Bulls": ["Arvid Lindblad", "Liam Lawson"],
+    "Haas": ["Esteban Ocon", "Ollie Bearman"],
+    "Alpine": ["Pierre Gasly", "Franco Colapinto"],
+    "Audi": ["Nico Hulkenberg", "Gabriel Bortoleto"],
+    "Cadillac": ["Sergio Perez", "Valtteri Bottas"]
+  },
+  "keywords": [
+    "F1", "Formula 1", "Grand Prix", "FIA",
+    "Verstappen", "Norris", "Piastri", "Leclerc", "Hamilton",
+    "Russell", "Antonelli", "Hadjar", "Sainz", "Albon",
+    "Alonso", "Stroll", "Lindblad", "Lawson", "Ocon",
+    "Bearman", "Gasly", "Colapinto", "Hulkenberg", "Bortoleto",
+    "Perez", "Bottas",
+    "Ferrari", "McLaren", "Mercedes", "Red Bull", "Williams",
+    "Aston Martin", "Racing Bulls", "Haas", "Alpine", "Audi", "Cadillac",
+    "qualifying", "race", "penalty", "strategy", "championship",
+    "regulation", "power unit", "hybrid", "sprint"
+  ],
+  "race_weekend_boost": true,
+  "personality_prompt": "You are the voice behind an F1 Twitter account.",
+  "post_formats": {
+    "breaking_news": "text_post",
+    "race_result": "thread",
+    "analysis": "thread",
+    "opinion": "text_post",
+    "historical": "thread"
+  },
+  "posting_cadence": {
+    "normal_day": 3,
+    "race_weekend": 8
+  },
+  "race_weekends_2026": [
+    {"name": "Australian Grand Prix", "start": "2026-03-06", "end": "2026-03-08"},
+    {"name": "Chinese Grand Prix", "start": "2026-03-13", "end": "2026-03-15"},
+    {"name": "Japanese Grand Prix", "start": "2026-03-27", "end": "2026-03-29"},
+    {"name": "Bahrain Grand Prix", "start": "2026-04-10", "end": "2026-04-12"},
+    {"name": "Saudi Arabian Grand Prix", "start": "2026-04-17", "end": "2026-04-19"},
+    {"name": "Miami Grand Prix", "start": "2026-05-01", "end": "2026-05-03"},
+    {"name": "Canadian Grand Prix", "start": "2026-05-22", "end": "2026-05-24"},
+    {"name": "Monaco Grand Prix", "start": "2026-06-05", "end": "2026-06-07"},
+    {"name": "Spanish Grand Prix", "start": "2026-06-12", "end": "2026-06-14"},
+    {"name": "Austrian Grand Prix", "start": "2026-06-26", "end": "2026-06-28"},
+    {"name": "British Grand Prix", "start": "2026-07-03", "end": "2026-07-05"},
+    {"name": "Belgian Grand Prix", "start": "2026-07-17", "end": "2026-07-19"},
+    {"name": "Hungarian Grand Prix", "start": "2026-07-24", "end": "2026-07-26"},
+    {"name": "Dutch Grand Prix", "start": "2026-08-21", "end": "2026-08-23"},
+    {"name": "Italian Grand Prix", "start": "2026-09-04", "end": "2026-09-06"},
+    {"name": "Madrid Grand Prix", "start": "2026-09-11", "end": "2026-09-13"},
+    {"name": "Azerbaijan Grand Prix", "start": "2026-09-24", "end": "2026-09-26"},
+    {"name": "Singapore Grand Prix", "start": "2026-10-09", "end": "2026-10-11"},
+    {"name": "United States Grand Prix", "start": "2026-10-23", "end": "2026-10-25"},
+    {"name": "Mexico City Grand Prix", "start": "2026-10-30", "end": "2026-11-01"},
+    {"name": "São Paulo Grand Prix", "start": "2026-11-06", "end": "2026-11-08"},
+    {"name": "Las Vegas Grand Prix", "start": "2026-11-19", "end": "2026-11-21"},
+    {"name": "Qatar Grand Prix", "start": "2026-11-27", "end": "2026-11-29"},
+    {"name": "Abu Dhabi Grand Prix", "start": "2026-12-04", "end": "2026-12-06"}
+  ]
+}
